@@ -1,0 +1,5 @@
+{
+  "baseUrl": "http://localhost:4200/",
+  "fixturesFolder": "test/fixtures",
+  "integrationFolder": "cypress/integration"
+}
