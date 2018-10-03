@@ -10,4 +10,8 @@ export class Login {
         cy.get('[formcontrolname="password"]').type('demo');
         cy.get('button').click({force: true});
     }
+
+    logout(){
+        cy.get('button').click({force: true});
+    }
 }
