@@ -18,6 +18,7 @@ Build:
   tags:
   - node
   before_script:
+  - cd todo-app/
   - yarn config set cache-folder .yarn
   - yarn install
   script:
@@ -28,6 +29,7 @@ Test:
   tags:
   - node
   before_script:
+  - cd todo-app/
   - yarn config set cache-folder .yarn
   - yarn install
   script:
