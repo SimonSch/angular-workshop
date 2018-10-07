@@ -17,7 +17,7 @@ Build:
   tags:
   - node
   before_script:
-  - cd todo-app/
+  - cd angular-testing-recipes/
   - yarn config set cache-folder .yarn
   - yarn install
   script:
@@ -28,7 +28,7 @@ Test:
   tags:
   - node
   before_script:
-  - cd todo-app/
+  - cd angular-testing-recipes/
   - yarn config set cache-folder .yarn
   - yarn install
   script:
