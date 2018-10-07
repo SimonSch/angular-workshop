@@ -2,14 +2,14 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TodosComponent } from './todos.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { ApiMockService } from '../api-mock.service';
-import { TodoDataService } from '../todo-data.service';
-import { ApiService } from '../api.service';
+import { ApiMockService } from '../shared/api/api-mock.service';
+import { TodoDataService } from '../shared/services/todo-data.service';
+import { ApiService } from '../shared/api/api.service';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
-import { AuthService } from 'app/auth.service';
-import { SessionService } from 'app/session.service';
+import { Observable } from 'rxjs';
 import { RouterTestingModule } from '@angular/router/testing';
+import {AuthService} from "../shared/auth/auth.service";
+import {SessionService} from "../shared/auth/session.service";
 
 describe('TodosComponent', () => {
   let component: TodosComponent;
@@ -30,8 +30,8 @@ describe('TodosComponent', () => {
         {
           provide: ActivatedRoute,
           useValue: {
-            data: Observable.of({
-              todos: []
+            data: new Observable((observer) => {
+              observer.next({todos: []})
             })
           }
         }

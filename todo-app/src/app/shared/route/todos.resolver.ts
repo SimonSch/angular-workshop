@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
-import { Todo } from './todo';
-import { TodoDataService } from './todo-data.service';
+import { Todo } from '../models/todo';
+import { TodoDataService } from '../services/todo-data.service';
 import {Observable} from "rxjs";
 
 @Injectable()

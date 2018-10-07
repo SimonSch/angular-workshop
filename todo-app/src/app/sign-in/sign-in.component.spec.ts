@@ -2,10 +2,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SignInComponent } from './sign-in.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ApiService } from '../api.service';
-import { ApiMockService } from '../api-mock.service';
-import { AuthService } from '../auth.service';
-import { SessionService } from '../session.service';
+import { ApiService } from '../shared/api/api.service';
+import { ApiMockService } from '../shared/api/api-mock.service';
+import { AuthService } from '../shared/auth/auth.service';
+import { SessionService } from '../shared/auth/session.service';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('SignInComponent', () => {

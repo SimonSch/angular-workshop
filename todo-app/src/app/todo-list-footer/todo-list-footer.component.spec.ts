@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { TodoListFooterComponent } from './todo-list-footer.component';
-import { Todo } from '../todo';
+import { Todo } from '../shared/models/todo';
 
 describe('TodoListFooterComponent', () => {
   let component: TodoListFooterComponent;

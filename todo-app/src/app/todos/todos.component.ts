@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoDataService } from '../todo-data.service';
-import { Todo } from '../todo';
+import { TodoDataService } from '../shared/services/todo-data.service';
+import { Todo } from '../shared/models/todo';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../shared/auth/auth.service';
 import { map } from 'rxjs/operators';
 
 @Component({

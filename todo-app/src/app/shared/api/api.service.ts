@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Todo } from './todo';
+import { Todo } from '../models/todo';
 import { Observable } from 'rxjs';
 import {
   HttpClient,
@@ -7,7 +7,7 @@ import {
   HttpHeaders
 } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import {SessionService} from "./session.service";
+import {SessionService} from "../auth/session.service";
 
 const API_URL = 'http://localhost:3000';
 
