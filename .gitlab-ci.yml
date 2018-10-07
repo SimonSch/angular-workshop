@@ -21,7 +21,7 @@ Build:
   - yarn config set cache-folder .yarn
   - yarn install
   script:
-  - yarn build
+  - npm run build
 
 Test:
   stage: test
@@ -37,4 +37,4 @@ Test:
   - apt-get update
   - apt-get install google-chrome-stable -y
 
-  - yarn test:karma-headless
+  - npm run test:karma-headless
