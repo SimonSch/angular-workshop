@@ -1,7 +1,7 @@
-import {Login} from "./login";
+import {Login} from './login';
 
-describe('Login',  () =>  {
-        it('should login with user demo', () => {
-        const login = new Login().login();
-    })
+describe('Login', () => {
+    it('should login with user demo', () => {
+        new Login().login();
+    });
 });

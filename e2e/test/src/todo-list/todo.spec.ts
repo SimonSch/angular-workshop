@@ -1,7 +1,12 @@
-import {Todo} from "./todo";
+import {Todo} from './todo';
+import {Login} from '../login/login';
 
-describe('Todo',  () => {
-    const todo  = Todo.randomTodo();
+describe('Todo', () => {
+    before(() => {
+        new Login().login();
+    });
+
+    const todo = Todo.randomTodo();
     it('should create a todo', () => {
         Todo.addTodo(todo);
     });

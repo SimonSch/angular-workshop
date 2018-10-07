@@ -11,7 +11,7 @@ export class Login {
         cy.get('button').click({force: true});
     }
 
-    logout(){
+    logout() {
         cy.get('button').click({force: true});
     }
 }
