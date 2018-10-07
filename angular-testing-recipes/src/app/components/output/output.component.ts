@@ -1,4 +1,4 @@
-import { Output, Component, EventEmitter } from '@angular/core';
+import {Output, EventEmitter, Component} from '@angular/core';
 
 @Component({
   selector: 'test',

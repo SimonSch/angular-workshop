@@ -11,6 +11,6 @@ export class RemoteService {
   }
 
   throwingError() {
-    throw new Error('Should be mocked');
+    throw new Error('Should be mocked.');
   }
 }

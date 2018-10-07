@@ -1,7 +1,7 @@
 import {ComponentFixture, TestBed, async} from '@angular/core/testing';
 import {DynamicStylesComponent} from './dynamic-styles.component';
-import {customMatchers} from "../utils/custom-matchers";
-import * as custom from "../utils/custom-matchers";
+import {customMatchers} from "../../utils/custom-matchers";
+import * as custom from "../../utils/custom-matchers";
 
 
 describe('DynamicStylesComponent', () => {

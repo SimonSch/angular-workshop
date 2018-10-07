@@ -1,12 +1,9 @@
 /* tslint:disable:no-unused-variable */
 
-import {
-  HttpClientTestingModule,
-  HttpTestingController
-} from '@angular/common/http/testing';
-import { of } from 'rxjs/observable/of';
-import { TestBed } from '@angular/core/testing';
-import { RemoteService } from './remote.service';
+import {HttpClientTestingModule} from '@angular/common/http/testing';
+import {of} from 'rxjs/observable/of';
+import {TestBed} from '@angular/core/testing';
+import {RemoteService} from './remote.service';
 
 describe('RemoteService (fake call with Jasmine)', () => {
   let service: RemoteService;

@@ -1,4 +1,4 @@
-import { LanguageService, LanguageEnum } from './language.service';
+import { LanguageService, LanguageEnum } from '../../services/language.service';
 import { Component } from '@angular/core';
 
 @Component({
