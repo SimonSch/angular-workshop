@@ -38,4 +38,4 @@ Test:
   - apt-get update
   - apt-get install google-chrome-stable -y
 
-  - yarn test
+  - yarn test:headless
