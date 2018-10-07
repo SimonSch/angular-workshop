@@ -45,7 +45,8 @@ Test:
 cypress-install:
   image: cypress/base:10
   stage: build
-
+  before_script:
+  - cd e2e/
   script:
   - npm ci
   - $(npm bin)/cypress verify
@@ -67,6 +68,8 @@ cypress-e2e:
 cypress-e2e-chrome:
   image: cypress/browsers:chrome67
   stage: test
+  before_script:
+  - cd e2e/
   script:
   - $(npm bin)/cypress run --browser chrome
   artifacts:
