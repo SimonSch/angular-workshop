@@ -10,6 +10,7 @@
   },
   "scripts": {
     "test:run": "cypress run",
+    "test:headless": "cypress run",
     "test:open": "cypress open",
     "test:compile": "tsc --project tsconfig.json",
     "test:compile:watch": "tsc --watch --project tsconfig.json",
