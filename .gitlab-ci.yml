@@ -20,6 +20,7 @@ Build:
   - cd angular-testing-recipes/
   - yarn config set cache-folder .yarn
   - yarn install
+  - yarn audit
   script:
   - yarn build
 
